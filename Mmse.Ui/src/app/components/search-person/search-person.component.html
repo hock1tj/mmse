@@ -1,0 +1,31 @@
+<div class="button-container">
+  <button mat-raised-button color="primary">
+    <i class="fas fa-user-plus" aria-hidden="true"></i>
+    Create New
+  </button>
+</div>
+<mat-card class="mat-card displayFlex">
+  <div class="flexCol">
+    <h2 class="flexCol marginFix">Search</h2>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Search by mood">
+      </mat-form-field>
+    </form>
+    <mat-button-toggle-group>
+      <mat-button-toggle class="margin-0">Button</mat-button-toggle>
+      <mat-button-toggle>Button</mat-button-toggle>
+      <mat-button-toggle>ButtonL</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div class="button-row margin-top-20">
+      <button mat-raised-button color="primary">Search</button>
+      <button mat-raised-button color="warning">Clear Results</button>
+    </div>
+  </div>
+  <div class="flexCol">
+    <h2 class="marginFix">Info</h2>
+    <p>
+     Info goes here
+    </p>
+  </div>
+</mat-card>

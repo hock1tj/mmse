@@ -1,0 +1,22 @@
+
+<cmich-layout-top [applicationName]="'Music Meaning Search Engine'">
+  <span nav-main>
+    Nav menu
+  </span>
+  <span nav-top>
+    <a mat-button [routerLink]="['/home']">MMSE Home</a>
+  </span>
+  <div header >
+  </div>
+  <div app-content>
+        <router-outlet></router-outlet>
+  </div>
+  <div footer>
+    <p class="text-center">
+      Footer goes here
+    </p>
+  </div>
+</cmich-layout-top>
+
+
+

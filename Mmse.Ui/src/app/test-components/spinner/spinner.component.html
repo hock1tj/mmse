@@ -1,0 +1,17 @@
+<h3>Spinner</h3>
+<mat-progress-spinner [mode]="mode" [value]="val"></mat-progress-spinner>
+<br/>
+<label>Mode:</label>
+<mat-radio-group [(ngModel)]="mode">
+  <mat-radio-button value="determinate">
+    Determinate
+  </mat-radio-button>
+  <mat-radio-button value="indeterminate">
+    Indeterminate
+  </mat-radio-button>
+</mat-radio-group>
+<div *ngIf="mode == 'determinate'">
+  <label>Use Slider to Adjust Spinner Progress:</label>
+  <mat-slider [(ngModel)]="val"></mat-slider>
+</div>
+

@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": []
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "app.module.ts",
+    "models/error.ts",
+    "models/authData.ts",
+    "models/user.ts",
+    "services/http-interceptor.service.ts",
+    "services/authentication.service.ts",
+    "components/test.component.ts",
+    "test-components/test-button.component.ts",
+    "test-components/test-dialog.component.ts",
+    "test-components/test-form.component.ts",
+    "test-components/test-layout.component.ts",
+    "test-components/test-panel.component.ts",
+    "test-components/test-progress.component.ts",
+    "test-components/test-table.component.ts"
+  ]
+}

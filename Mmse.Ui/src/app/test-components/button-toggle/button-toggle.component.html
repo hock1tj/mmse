@@ -1,0 +1,15 @@
+<h3>Single Button Toggle</h3>
+  <mat-button-toggle (change)="toggle = !toggle"><i class="fas" [ngClass]="{'fa-bell': !toggle, 'fa-bell-slash': toggle}"></i> {{ toggle? 'Notifications Off': 'Notifications On' }}</mat-button-toggle>
+
+<h3>Button Toggle Group</h3>
+<mat-button-toggle-group #group="matButtonToggleGroup">
+  <mat-button-toggle value="1">
+    <i class="fab fa-2x fa-pied-piper-pp"></i>
+  </mat-button-toggle>
+  <mat-button-toggle value="center">
+    <i class="fab fa-2x fa-pied-piper-alt"></i>
+  </mat-button-toggle>
+  <mat-button-toggle value="right">
+    <i class="fab fa-2x fa-pied-piper"></i>
+  </mat-button-toggle>
+</mat-button-toggle-group>

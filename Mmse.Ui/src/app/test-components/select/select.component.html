@@ -1,0 +1,5 @@
+<mat-form-field>
+  <mat-select placeholder="Favorite Colors" multiple>
+    <mat-option *ngFor="let choice of choices" [value]="choice" class="mat-maroon">{{choice}}</mat-option>
+  </mat-select>
+</mat-form-field>

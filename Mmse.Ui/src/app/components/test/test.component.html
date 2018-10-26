@@ -1,0 +1,113 @@
+<cmich-loader [isLoading]="loading">
+  <div fxLayout fxLayout.xs="column" fxLayoutAlign="center"
+       fxLayoutGap="10px"
+       fxLayoutGap.xs="0">
+    <mat-card *ngIf="user" fxFlex="50%">
+      <mat-card-header>
+        <mat-card-title>User Information</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item>Name: {{user.cmichCompleteUser.firstName + ' ' + user.cmichCompleteUser.lastName}}</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Campus ID: {{user.cmichCompleteUser.campusId}}</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Email Address: {{user.cmichCompleteUser.globalId + '@cmich.edu' }}</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Is Student: {{user.cmichCompleteUser.isOnCampusStudent || user.cmichCompleteUser.isOffCampusStudent ? 'Yes':'No'}}</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Is Faculty: {{user.cmichCompleteUser.isOnCampusFaculty || user.cmichCompleteUser.isOffCampusFaculty ? 'Yes':'No'}}</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Is Staff: {{user.cmichCompleteUser.isOnCampusStaff || user.cmichCompleteUser.isOffCampusStaff ? 'Yes':'No'}}</mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>Hobbies: {{user.cmichCompleteUser.firstName + ' enjoys puppies, long walks on the beach, and time travel (time permitting).'}}</mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex>
+      <mat-card-header>
+        <mat-card-title>Test Form</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <cmich-test-form></cmich-test-form>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+  <div fxLayout fxLayout.xs="column" fxLayoutAlign="center"
+       fxLayoutGap="10px"
+       fxLayoutGap.xs="0">
+    <mat-card fxFlex="50%">
+      <mat-card-header>
+        <mat-card-title>Buttons!</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <cmich-test-button></cmich-test-button>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex>
+      <mat-card-header>
+        <mat-card-title>Making Progress</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <cmich-test-progress></cmich-test-progress>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+  <div fxLayout fxLayout.xs="column" fxLayoutAlign="center"
+       fxLayoutGap="10px"
+       fxLayoutGap.xs="0">
+    <mat-card fxFlex="50%">
+      <mat-card-header>
+        <mat-card-title>Modals and Popups</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+
+        <cmich-test-dialogs></cmich-test-dialogs>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex>
+      <mat-card-header>
+        <mat-card-title>Rick Astley Would Never:</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div style="clear: both">&nbsp;</div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div fxLayout fxLayout.xs="column" fxLayoutAlign="center"
+       fxLayoutGap="10px"
+       fxLayoutGap.xs="0">
+    <mat-card fxFlex="50%">
+      <mat-card-header>
+        <mat-card-title>Table</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <cmich-test-table></cmich-test-table>
+      </mat-card-content>
+    </mat-card>
+    <cmich-card fxFlex></cmich-card>
+  </div>
+  <div fxLayout fxLayout.xs="column" fxLayoutAlign="center"
+       fxLayoutGap="10px"
+       fxLayoutGap.xs="0">
+    
+    <mat-card fxFlex="50%">
+      <mat-card-header>
+        <mat-card-title>Dividers and Lists</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <cmich-test-layout></cmich-test-layout>
+      </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex="50%">
+      <mat-card-header>
+        <mat-card-title>Content Organization Components</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <cmich-test-panel></cmich-test-panel>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</cmich-loader>
