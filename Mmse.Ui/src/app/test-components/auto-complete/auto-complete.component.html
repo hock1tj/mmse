@@ -1,8 +1,0 @@
-<mat-form-field>
-  <input matInput placeholder="Best Game of Thrones Character" aria-label="Best Game of Thrones Character" [matAutocomplete]="auto" [formControl]="autocomplete">
-  <mat-autocomplete #auto="matAutocomplete">
-    <mat-option *ngFor="let choice of filteredChoices | async" [value]="choice">
-      <span>{{ choice }}</span>
-    </mat-option>
-  </mat-autocomplete>
-</mat-form-field>

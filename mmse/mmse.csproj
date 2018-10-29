@@ -143,11 +143,14 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Scripts\Dev\3rdpartylicenses.txt" />
+    <Content Include="Scripts\Dev\favicon.ico" />
+    <Content Include="Scripts\Dev\index.html" />
+    <Content Include="Scripts\Dev\main.js" />
+    <Content Include="Scripts\Dev\polyfills.js" />
+    <Content Include="Scripts\Dev\runtime.js" />
+    <Content Include="Scripts\Dev\styles.js" />
+    <Content Include="Scripts\Dev\vendor.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -156,22 +159,21 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Scripts\Dev\" />
-    <Folder Include="Scripts\Prod\" />
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Scripts\Dev\main.js.map" />
+    <Content Include="Scripts\Dev\polyfills.js.map" />
+    <Content Include="Scripts\Dev\runtime.js.map" />
+    <Content Include="Scripts\Dev\styles.js.map" />
+    <Content Include="Scripts\Dev\vendor.js.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
