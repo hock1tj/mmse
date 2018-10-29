@@ -1,5 +1,7 @@
 @import 'variables';
 
+
+
 //CSS Nerd Stuff Goes Here
 main{
   width:1024px !important;
@@ -19,39 +21,5 @@ main{
 .flexCol {
   flex: 1;
   margin: 0 5px;
-}
-
-mat-button-toggle{
-  label{
-    margin-bottom: 0 !important;
-  }
-}
-
-.mat-form-field-underline{
-  background-color:#ccc;
-}
-
-.mat-form-field-label-wrapper{
-  padding-top:1em;
-}
-
-.mat-form-field-label{
-  position: initial !important;
-}
-
-.mat-button-toggle{
-  background-color:#999;
-
-  label{
-    color:#fff;
-  }
-}
-
-.mat-button-toggle-checked {
-  background-color: #6a0032;
-
-  label {
-    color: #fff;
-  }
 }
 

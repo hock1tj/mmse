@@ -1,6 +1,6 @@
-# Enterprise.Angular
+# Mmse.Ui
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.6.
 
 ## Development server
 
@@ -17,7 +17,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Node.js
 
-Must have latest version of Node.js installed (https://nodejs.org/en/) -- probably at least v. 6.0.0...
+Must have latest version of Node.js installed (https://nodejs.org/en/) -- version 8.11.1 is good.
 
 ## Build
 
@@ -25,6 +25,7 @@ Must have latest version of Node.js installed (https://nodejs.org/en/) -- probab
   * Restore NuGet Packages on Solution
   * Open command prompt 
     * Type "npm install" (This will build your node_modules folder and get all your dependencies and typings)
+      * There's at least one package that will need to be deleted from the installed angular stuff - browser(something)
   * Type "npm run dist" (This will compile Angular code. Use instead of ng serve as it moves code to web project)
   * At this point, you should be able to build and debug project
   * The build artifacts will be stored in the `dist/` directory.  
@@ -48,24 +49,17 @@ Security Implementation using Active Directory and OAuth/OWIN
 * Server Side 
   * C#
   * WebApi
-  * AutoFac (IoC Container)
-  * Fluent NHibernate (ORM Tool)
-  * OAUTH/OWIN Middleware Implementation
 * Client Side
   * Typescript (Staticly typed, Class-based Transcompiler to JavaScript)
-  * Angular 5 (MVVM Framework)
+  * Angular 6 (MVVM Framework)
   * Angular CLI (Command Line Interface for Angular)
   * ReactiveX (Observables)
 * UI/UX
   * Angular Material (Material Design based UI Component Library)
   * Angular Flex Grid (Responsive Grid Framework)
   * NGX Charts (D3JS based Charting Library)
-  * Font Awesome 5 (Icon Library)
 
 ## Testing
- * Server Side
-   * MsTest (Testing Framework)
-   * Sqlite - InMemory Database configuration (Used in unit testing)
  * Client Side
    * Jest (w/ Jasmine) – JavaScript/TypeScript Test Framework
    * Istanbul (Jest code coverage)

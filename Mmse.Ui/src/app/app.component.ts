@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
 export class AppComponent implements OnInit {
 
 
-  constructor(
-    private readonly router: Router) {
+  constructor(private readonly router: Router) {
       
   }
 
   ngOnInit() {
+
   }
 
 }
