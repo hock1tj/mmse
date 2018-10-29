@@ -1,19 +1,28 @@
-@import 'variables';
+@import '../node_modules/@angular/material/theming';
 
+@include mat-core();
+
+$mmse-primary: mat-palette($mat-deep-purple);
+$mmse-accent: mat-palette($mat-green, A700);
+$mmse-warn: mat-palette($mat-deep-orange);
+
+$mmse-theme: mat-light-theme($mmse-primary, $mmse-accent, $mmse-warn);
+
+@include angular-material-theme($mmse-theme);
 
 
 //CSS Nerd Stuff Goes Here
-main{
-  width:1024px !important;
-  display:block !important;
+main {
+  width: 1024px !important;
+  display: block !important;
   margin: 0 auto;
 }
 
-.displayFlex{
+.displayFlex {
   display: flex !important;
 }
 
-.marginFix{
+.marginFix {
   margin-bottom: .83em !important;
   margin-top: 0 !important;
 }
@@ -23,3 +32,6 @@ main{
   margin: 0 5px;
 }
 
+.button-container {
+  margin: 0 20px;
+}

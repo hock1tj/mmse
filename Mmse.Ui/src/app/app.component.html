@@ -1,13 +1,17 @@
 <div header>
-  <span nav-top>
-    <a mat-button [routerLink]="['/home']">MMSE Home</a>
-  </span>
+  <mat-toolbar color="primary">
+    <span>Music Meaning Search Engine</span>
+    <span nav-top>
+      <a mat-button [routerLink]="['/home']">Home</a>
+    </span>
+  </mat-toolbar>
 </div>
 <mat-menu></mat-menu>
 <div app-content>
   <router-outlet></router-outlet>
 </div>
 <div footer>
+
   <p class="text-center">
     Footer goes here
   </p>

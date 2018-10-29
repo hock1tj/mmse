@@ -98,7 +98,6 @@
     <Content Include="src\tsconfig.app.json" />
     <Content Include="src\tsconfig.docs.json" />
     <Content Include="src\tsconfig.spec.json" />
-    <Content Include="src\_variables.scss" />
     <Content Include="README.md" />
     <Content Include="tslint.json" />
     <Content Include="tsconfig.json" />
