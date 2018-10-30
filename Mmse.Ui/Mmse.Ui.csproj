@@ -73,6 +73,8 @@
     <Content Include="src\app\app.component.html" />
     <Content Include="src\app\components\about\about.component.html" />
     <Content Include="src\app\components\home\home.component.html" />
+    <Content Include="src\app\components\about\twitter3.png" />
+    <Content Include="src\app\components\playlist\playlist.component.html" />
     <Content Include="src\favicon.ico" />
     <Content Include="src\index.html" />
     <Content Include="src\styles.css" />
@@ -103,6 +105,7 @@
     <Content Include="tsconfig.json" />
     <Content Include="src\app\components\home\home.component.scss" />
     <Content Include="src\app\components\about\about.component.scss" />
+    <Content Include="src\app\components\playlist\playlist.component.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,6 +123,9 @@
     <TypeScriptCompile Include="src\app\components\about\about.component.ts" />
     <TypeScriptCompile Include="src\app\components\home\home.component.spec.ts" />
     <TypeScriptCompile Include="src\app\components\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\components\playlist\playlist.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\components\playlist\playlist.component.ts" />
+    <TypeScriptCompile Include="src\app\models\user-dto.ts" />
     <TypeScriptCompile Include="src\app\services\login.service.spec.ts" />
     <TypeScriptCompile Include="src\app\services\login.service.ts" />
     <TypeScriptCompile Include="src\environments\environment.prod.ts" />
@@ -134,7 +140,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\app\models\" />
+    <Folder Include="src\app\test-components\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

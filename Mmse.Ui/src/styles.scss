@@ -32,12 +32,18 @@ main {
 }
 
 .mat-toolbar.mat-primary {
-  height: 80px;
+  height: 60px;
 }
 
-.mainPage{
+.mainPage {
   max-width: 960px;
-  margin:auto;
+  margin: auto;
+}
+
+.aboutPage {
+  max-width: 960px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .header {
@@ -45,7 +51,7 @@ main {
 }
 
 .appContent {
-  min-height: calc(100vh - 210px);
+  min-height: calc(100vh - 150px);
 }
 
 .mmseTitle {
@@ -57,6 +63,15 @@ mat-card-title.mat-card-title {
   font-size: 1.25rem !important;
 }
 
+.aboutImg{
+  height: 100px !important;
+  width: 100px !important;
+}
 
+.padding-left-10 {
+  margin-left: 10px;
+}
 
-
+padding-right-10{
+  padding-right: 10px;
+}

@@ -1,8 +1,13 @@
 <div header class="header">
   <mat-toolbar color="primary">
-    <span>Music Meaning Search Engine</span>
+    <img mat-card-avatar src="https://beta.kittybattles.io/assets/SpaceIcon.svg" alt="image">
+    <div class="padding-left-10">
+      <span class="padding-right-10">Music Meaning Search Engine</span>
+    </div>
     <span nav-top>
       <a mat-button [routerLink]="['/home']">Home</a>
+      <a mat-button [routerLink]="['/playlist']">Playlist Search</a>
+      <a mat-button [routerLink]="['/about']">About The Team</a>
     </span>
   </mat-toolbar>
 </div>
@@ -10,7 +15,7 @@
   <router-outlet></router-outlet>
 </div>
 <div footer>
-  <mat-toolbar color="primary">Footer goes here</mat-toolbar>
+  <mat-toolbar color="primary"></mat-toolbar>
 </div>
 
 
