@@ -15,6 +15,9 @@ import { MaterialModule } from './angular-material/material.module'
 //Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { PlaylistComponent } from './components/playlist/playlist.component';
+
 
 //Services
 import { MediaMatcher } from '@angular/cdk/layout';
@@ -22,7 +25,9 @@ import { MediaMatcher } from '@angular/cdk/layout';
 @NgModule(({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    PlaylistComponent,
   ],
   imports: [
     BrowserModule,
