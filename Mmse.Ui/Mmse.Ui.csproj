@@ -124,7 +124,10 @@
     <TypeScriptCompile Include="src\app\components\home\home.component.spec.ts" />
     <TypeScriptCompile Include="src\app\components\home\home.component.ts" />
     <TypeScriptCompile Include="src\app\components\playlist\playlist.component.spec.ts" />
-    <TypeScriptCompile Include="src\app\components\playlist\playlist.component.ts" />
+    <TypeScriptCompile Include="src\app\services\playlist.component.ts" />
+    <TypeScriptCompile Include="src\app\models\new-playlist-dto.ts" />
+    <TypeScriptCompile Include="src\app\models\playlist-dto.ts" />
+    <TypeScriptCompile Include="src\app\models\song-dto.ts" />
     <TypeScriptCompile Include="src\app\models\user-dto.ts" />
     <TypeScriptCompile Include="src\app\services\login.service.spec.ts" />
     <TypeScriptCompile Include="src\app\services\login.service.ts" />
