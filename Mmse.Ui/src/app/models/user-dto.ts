@@ -1,4 +1,4 @@
-import { USERS } from '../mocks/mock-data'
+import { USER } from '../mocks/mock-data'
 
 
 export class UserDto {
